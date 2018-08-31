@@ -16,6 +16,8 @@ public class UserController {
         users.add(new User(2,"B"));
         users.add(new User(3,"C"));
         users.add(new User(4,"D"));
+        users.add(new User(5,"E"));
+
         return users.get(id-1);
     }
 
@@ -26,6 +28,7 @@ public class UserController {
         users.add(new User(2,"B"));
         users.add(new User(3,"C"));
         users.add(new User(4,"D"));
+        users.add(new User(5,"E"));
         return users;
     }
 }
