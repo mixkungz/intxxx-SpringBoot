@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 @RestController
 public class UserController {
-    ArrayList<User> users;
+    private ArrayList<User> users;
 
     public UserController() {
         users = new ArrayList();
@@ -20,7 +20,7 @@ public class UserController {
 
     }
 
-    @GetMapping("/users/{id}")
+    @GetMapping("/users/{id:[\\d]}")
     public User getUser(@PathVariable("id") int id) {
         return this.users.get(id-1);
     }
